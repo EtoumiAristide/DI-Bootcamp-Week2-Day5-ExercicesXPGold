@@ -5,50 +5,44 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        button {
-            width: 70px;
-            height: 70px;
-        }
-    </style>
 </head>
 
 <body>
     <div class="calculator">
         <div>
-            <input type="text" name="" value="0" id="inputText">
+            <input type="text" id="screen" value="0" id="screen">
         </div>
         <div class="elements">
-            <button class="number" type="button" name="button" onclick="number(1);">1</button>
-            <button class="number" type="button" name="button" onclick="number(2);">2</button>
-            <button class="number" type="button" name="button" onclick="number(3);">3</button>
-            <button class="number" type="button" name="button" onclick="number(4);">4</button>
-        </div>
-
-        <div class="elements">
-            <button class="number" type="button" name="button" onclick="number(5);">5</button>
-            <button class="number" type="button" name="button" onclick="number(6);">6</button>
-            <button class="number" type="button" name="button" onclick="number(7);">7</button>
-            <button class="number" type="button" name="button" onclick="number(8);">8</button>
+            <button class="number" type="button" id="btnNumber1" onclick="number(1);">1</button>
+            <button class="number" type="button" id="btnNumber2" onclick="number(2);">2</button>
+            <button class="number" type="button" id="btnNumber3" onclick="number(3);">3</button>
+            <button class="number" type="button" id="btnNumber4" onclick="number(4);">4</button>
         </div>
 
         <div class="elements">
-            <button class="number" type="button" name="button" onclick="number(9);">9</button>
-            <button class="number" type="button" name="button" onclick="number(0);">0</button>
-            <button class="number" type="button" name="button" onclick="number('.');">.</button>
-            <button class="operator" type="button" name="button" onclick="operator('+');">+</button>
+            <button class="number" type="button" id="btnNumber5" onclick="number(5);">5</button>
+            <button class="number" type="button" id="btnNumber6" onclick="number(6);">6</button>
+            <button class="number" type="button" id="btnNumber7" onclick="number(7);">7</button>
+            <button class="number" type="button" id="btnNumber8" onclick="number(8);">8</button>
         </div>
 
         <div class="elements">
-            <button class="operator" type="button" name="button" onclick="operator('-');">-</button>
-            <button class="operator" type="button" name="button" onclick="operator('*');">*</button>
-            <button class="operator" type="button" name="button" onclick="operator('/');">/</button>
-            <button class="operator" type="button" name="button" onclick="equal();">=</button>
+            <button class="number" type="button" id="btnNumber9" onclick="number(9);">9</button>
+            <button class="number" type="button" id="btnNumber0" onclick="number(0);">0</button>
+            <button class="number" type="button" id="btnPoint" onclick="number('.');">.</button>
+            <button class="operator" type="button" id="btnOperatorPlus" onclick="operator('+');">+</button>
+        </div>
+
+        <div class="elements">
+            <button class="operator" type="button" id="btnOperatorMoins" onclick="operator('-');">-</button>
+            <button class="operator" type="button" id="btnOperatorMult" onclick="operator('*');">*</button>
+            <button class="operator" type="button" id="btnOperatorDiv" onclick="operator('/');">/</button>
+            <button class="operator" type="button" id="btnOperatorEqual" onclick="equal();">=</button>
         </div>
 
         <div class="clear-reset">
-            <button class="reset" type="button" name="button" onclick="reset();">Reset</button>
-            <button class="clear" type="button" name="button" onclick="clear();">clear</button>
+            <button class="reset" type="button" id="btnReset" onclick="reset(true);">Reset</button>
+            <button class="clear" type="button" id="btnClear" onclick="clear();">clear</button>
         </div>
     </div>
     <script src="js/main.js" charset="utf-8"></script>
